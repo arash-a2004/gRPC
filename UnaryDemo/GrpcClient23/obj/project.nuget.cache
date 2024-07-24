@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p4ju+FuluRI=",
+  "dgSpecHash": "F84JKw7rfmU=",
   "success": true,
-  "projectFilePath": "F:\\آموزش\\gRPC\\Unary\\UnaryDemo\\GrpcClient23\\GrpcClient23.csproj",
+  "projectFilePath": "F:\\آموزش\\gRPC\\Unary\\gRPC\\UnaryDemo\\GrpcClient23\\GrpcClient23.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AsusIran\\.nuget\\packages\\google.protobuf\\3.27.2\\google.protobuf.3.27.2.nupkg.sha512",
     "C:\\Users\\AsusIran\\.nuget\\packages\\grpc.core.api\\2.64.0\\grpc.core.api.2.64.0.nupkg.sha512",

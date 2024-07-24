@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\آموزش\\gRPC\\Unary\\UnaryDemo\\gRPCService\\gRPCService.csproj": {}
+    "F:\\آموزش\\gRPC\\Unary\\gRPC\\UnaryDemo\\gRPCService\\gRPCService.csproj": {}
   },
   "projects": {
-    "F:\\آموزش\\gRPC\\Unary\\UnaryDemo\\gRPCService\\gRPCService.csproj": {
+    "F:\\آموزش\\gRPC\\Unary\\gRPC\\UnaryDemo\\gRPCService\\gRPCService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\آموزش\\gRPC\\Unary\\UnaryDemo\\gRPCService\\gRPCService.csproj",
+        "projectUniqueName": "F:\\آموزش\\gRPC\\Unary\\gRPC\\UnaryDemo\\gRPCService\\gRPCService.csproj",
         "projectName": "gRPCService",
-        "projectPath": "F:\\آموزش\\gRPC\\Unary\\UnaryDemo\\gRPCService\\gRPCService.csproj",
+        "projectPath": "F:\\آموزش\\gRPC\\Unary\\gRPC\\UnaryDemo\\gRPCService\\gRPCService.csproj",
         "packagesPath": "C:\\Users\\AsusIran\\.nuget\\packages\\",
-        "outputPath": "F:\\آموزش\\gRPC\\Unary\\UnaryDemo\\gRPCService\\obj\\",
+        "outputPath": "F:\\آموزش\\gRPC\\Unary\\gRPC\\UnaryDemo\\gRPCService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,6 +53,10 @@
             "Grpc.AspNetCore": {
               "target": "Package",
               "version": "[2.57.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
             }
           },
           "imports": [

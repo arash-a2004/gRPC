@@ -1,0 +1,2 @@
+obj\Debug\net8.0\Protos/Sample - CopyGrpc.cs \
+obj\Debug\net8.0\Protos/SampleCopy.cs: Protos/Sample - Copy.proto
