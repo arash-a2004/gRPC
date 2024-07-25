@@ -1,4 +1,5 @@
 syntax = "proto3";
+import "google/protobuf/empty.proto";
 
 option csharp_namespace = "gRPCService";
 
@@ -6,16 +7,22 @@ package Product;
 
 service Product {
   rpc saveProduct (ProductModel) returns (ProductSaveResponse);
+  rpc getproducts (google.protobuf.Empty) returns (productList);
 }
 
 message ProductModel {
 	string productName = 1;
 	string productCode = 2;
-	double price = 3;
+	string price = 3;
 }
 message ProductSaveResponse {
 	int32 statusCode = 1;
 	bool isSuccessful = 2;
 }
+
+message productList {
+	repeated ProductModel list = 1;
+}
+
 
 

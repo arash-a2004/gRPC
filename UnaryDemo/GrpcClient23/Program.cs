@@ -18,19 +18,24 @@ namespace GrpcClient23
             {
                 ProductName = "laptop",
                 ProductCode = "2",
-                Price = 12.0
+                Price = "12.0"
             };
             try
             {
                 //client1
-                var client = new Sample.SampleClient(channel);
-                var reply = await client.GetFullNAmeAsync(sampleReq);
-                Console.WriteLine(reply.Message);
+                //var client = new Sample.SampleClient(channel);
+                //var reply = await client.GetFullNAmeAsync(sampleReq);
+                //Console.WriteLine(reply.Message);
 
                 //client2
                 var client2 = new Product.ProductClient(channel);
                 var reply2 = await client2.saveProductAsync(productReq);
                 Console.WriteLine(reply2.StatusCode);
+
+                //client3
+                Google.Protobuf.WellKnownTypes.Empty empty = new Google.Protobuf.WellKnownTypes.Empty();
+                var client3 = new Product.ProductClient(channel);
+                var reply3 = await client3.getproductsAsync(empty);
             }
             catch (Exception ex)
             {

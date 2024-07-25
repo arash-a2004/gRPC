@@ -24,18 +24,22 @@ namespace gRPCService {
     static ProductReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChRQcm90b3MvcHJvZHVjdC5wcm90bxIHUHJvZHVjdCJHCgxQcm9kdWN0TW9k",
-            "ZWwSEwoLcHJvZHVjdE5hbWUYASABKAkSEwoLcHJvZHVjdENvZGUYAiABKAkS",
-            "DQoFcHJpY2UYAyABKAEiPwoTUHJvZHVjdFNhdmVSZXNwb25zZRISCgpzdGF0",
-            "dXNDb2RlGAEgASgFEhQKDGlzU3VjY2Vzc2Z1bBgCIAEoCDJNCgdQcm9kdWN0",
-            "EkIKC3NhdmVQcm9kdWN0EhUuUHJvZHVjdC5Qcm9kdWN0TW9kZWwaHC5Qcm9k",
-            "dWN0LlByb2R1Y3RTYXZlUmVzcG9uc2VCDqoCC2dSUENTZXJ2aWNlYgZwcm90",
-            "bzM="));
+            "ChRQcm90b3MvcHJvZHVjdC5wcm90bxIHUHJvZHVjdBobZ29vZ2xlL3Byb3Rv",
+            "YnVmL2VtcHR5LnByb3RvIkcKDFByb2R1Y3RNb2RlbBITCgtwcm9kdWN0TmFt",
+            "ZRgBIAEoCRITCgtwcm9kdWN0Q29kZRgCIAEoCRINCgVwcmljZRgDIAEoCSI/",
+            "ChNQcm9kdWN0U2F2ZVJlc3BvbnNlEhIKCnN0YXR1c0NvZGUYASABKAUSFAoM",
+            "aXNTdWNjZXNzZnVsGAIgASgIIjIKC3Byb2R1Y3RMaXN0EiMKBGxpc3QYASAD",
+            "KAsyFS5Qcm9kdWN0LlByb2R1Y3RNb2RlbDKKAQoHUHJvZHVjdBJCCgtzYXZl",
+            "UHJvZHVjdBIVLlByb2R1Y3QuUHJvZHVjdE1vZGVsGhwuUHJvZHVjdC5Qcm9k",
+            "dWN0U2F2ZVJlc3BvbnNlEjsKC2dldHByb2R1Y3RzEhYuZ29vZ2xlLnByb3Rv",
+            "YnVmLkVtcHR5GhQuUHJvZHVjdC5wcm9kdWN0TGlzdEIOqgILZ1JQQ1NlcnZp",
+            "Y2ViBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::gRPCService.ProductModel), global::gRPCService.ProductModel.Parser, new[]{ "ProductName", "ProductCode", "Price" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::gRPCService.ProductSaveResponse), global::gRPCService.ProductSaveResponse.Parser, new[]{ "StatusCode", "IsSuccessful" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::gRPCService.ProductSaveResponse), global::gRPCService.ProductSaveResponse.Parser, new[]{ "StatusCode", "IsSuccessful" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::gRPCService.productList), global::gRPCService.productList.Parser, new[]{ "List" }, null, null, null, null)
           }));
     }
     #endregion
@@ -114,13 +118,13 @@ namespace gRPCService {
 
     /// <summary>Field number for the "price" field.</summary>
     public const int PriceFieldNumber = 3;
-    private double price_;
+    private string price_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public double Price {
+    public string Price {
       get { return price_; }
       set {
-        price_ = value;
+        price_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -141,7 +145,7 @@ namespace gRPCService {
       }
       if (ProductName != other.ProductName) return false;
       if (ProductCode != other.ProductCode) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(Price, other.Price)) return false;
+      if (Price != other.Price) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -151,7 +155,7 @@ namespace gRPCService {
       int hash = 1;
       if (ProductName.Length != 0) hash ^= ProductName.GetHashCode();
       if (ProductCode.Length != 0) hash ^= ProductCode.GetHashCode();
-      if (Price != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(Price);
+      if (Price.Length != 0) hash ^= Price.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -178,9 +182,9 @@ namespace gRPCService {
         output.WriteRawTag(18);
         output.WriteString(ProductCode);
       }
-      if (Price != 0D) {
-        output.WriteRawTag(25);
-        output.WriteDouble(Price);
+      if (Price.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Price);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -200,9 +204,9 @@ namespace gRPCService {
         output.WriteRawTag(18);
         output.WriteString(ProductCode);
       }
-      if (Price != 0D) {
-        output.WriteRawTag(25);
-        output.WriteDouble(Price);
+      if (Price.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Price);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -220,8 +224,8 @@ namespace gRPCService {
       if (ProductCode.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(ProductCode);
       }
-      if (Price != 0D) {
-        size += 1 + 8;
+      if (Price.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Price);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -241,7 +245,7 @@ namespace gRPCService {
       if (other.ProductCode.Length != 0) {
         ProductCode = other.ProductCode;
       }
-      if (other.Price != 0D) {
+      if (other.Price.Length != 0) {
         Price = other.Price;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -267,8 +271,8 @@ namespace gRPCService {
             ProductCode = input.ReadString();
             break;
           }
-          case 25: {
-            Price = input.ReadDouble();
+          case 26: {
+            Price = input.ReadString();
             break;
           }
         }
@@ -294,8 +298,8 @@ namespace gRPCService {
             ProductCode = input.ReadString();
             break;
           }
-          case 25: {
-            Price = input.ReadDouble();
+          case 26: {
+            Price = input.ReadString();
             break;
           }
         }
@@ -522,6 +526,184 @@ namespace gRPCService {
           }
           case 16: {
             IsSuccessful = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class productList : pb::IMessage<productList>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<productList> _parser = new pb::MessageParser<productList>(() => new productList());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<productList> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::gRPCService.ProductReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public productList() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public productList(productList other) : this() {
+      list_ = other.list_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public productList Clone() {
+      return new productList(this);
+    }
+
+    /// <summary>Field number for the "list" field.</summary>
+    public const int ListFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::gRPCService.ProductModel> _repeated_list_codec
+        = pb::FieldCodec.ForMessage(10, global::gRPCService.ProductModel.Parser);
+    private readonly pbc::RepeatedField<global::gRPCService.ProductModel> list_ = new pbc::RepeatedField<global::gRPCService.ProductModel>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::gRPCService.ProductModel> List {
+      get { return list_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as productList);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(productList other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!list_.Equals(other.list_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= list_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      list_.WriteTo(output, _repeated_list_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      list_.WriteTo(ref output, _repeated_list_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += list_.CalculateSize(_repeated_list_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(productList other) {
+      if (other == null) {
+        return;
+      }
+      list_.Add(other.list_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            list_.AddEntriesFrom(input, _repeated_list_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            list_.AddEntriesFrom(ref input, _repeated_list_codec);
             break;
           }
         }

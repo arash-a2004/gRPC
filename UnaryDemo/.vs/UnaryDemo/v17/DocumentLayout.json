@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "F:\\\u0622\u0645\u0648\u0632\u0634\\gRPC\\Unary\\gRPC\\UnaryDemo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4B7B1EEE-17AD-4F07-96F1-C07809B57722}|GrpcClient23\\GrpcClient23.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\grpc\\unary\\grpc\\unarydemo\\grpcclient23\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B7B1EEE-17AD-4F07-96F1-C07809B57722}|GrpcClient23\\GrpcClient23.csproj|solutionrelative:grpcclient23\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6332C44E-769C-4CAB-B956-3C53D445AA78}|gRPCService\\gRPCService.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\grpc\\unary\\grpc\\unarydemo\\grpcservice\\services\\productservicecs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6332C44E-769C-4CAB-B956-3C53D445AA78}|gRPCService\\gRPCService.csproj|solutionrelative:grpcservice\\services\\productservicecs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6332C44E-769C-4CAB-B956-3C53D445AA78}|gRPCService\\gRPCService.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\grpc\\unary\\grpc\\unarydemo\\grpcservice\\services\\sampleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6332C44E-769C-4CAB-B956-3C53D445AA78}|gRPCService\\gRPCService.csproj|solutionrelative:grpcservice\\services\\sampleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6332C44E-769C-4CAB-B956-3C53D445AA78}|gRPCService\\gRPCService.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\grpc\\unary\\grpc\\unarydemo\\grpcservice\\protos\\product.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{6332C44E-769C-4CAB-B956-3C53D445AA78}|gRPCService\\gRPCService.csproj|solutionrelative:grpcservice\\protos\\product.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B7B1EEE-17AD-4F07-96F1-C07809B57722}|GrpcClient23\\GrpcClient23.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\grpc\\unary\\grpc\\unarydemo\\grpcclient23\\protos\\product.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{4B7B1EEE-17AD-4F07-96F1-C07809B57722}|GrpcClient23\\GrpcClient23.csproj|solutionrelative:grpcclient23\\protos\\product.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\\u0622\u0645\u0648\u0632\u0634\\gRPC\\Unary\\gRPC\\UnaryDemo\\gRPCService\\obj\\Debug\\net8.0\\Protos\\ProductGrpc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:gRPCService\\obj\\Debug\\net8.0\\Protos\\ProductGrpc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B7B1EEE-17AD-4F07-96F1-C07809B57722}|GrpcClient23\\GrpcClient23.csproj|f:\\\u0622\u0645\u0648\u0632\u0634\\grpc\\unary\\grpc\\unarydemo\\grpcclient23\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B7B1EEE-17AD-4F07-96F1-C07809B57722}|GrpcClient23\\GrpcClient23.csproj|solutionrelative:grpcclient23\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,67 +30,54 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SampleService.cs",
-              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\gRPC\\Unary\\gRPC\\UnaryDemo\\gRPCService\\Services\\SampleService.cs",
-              "RelativeDocumentMoniker": "gRPCService\\Services\\SampleService.cs",
-              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\gRPC\\Unary\\gRPC\\UnaryDemo\\gRPCService\\Services\\SampleService.cs",
-              "RelativeToolTip": "gRPCService\\Services\\SampleService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T13:04:31.125Z",
+              "DocumentIndex": 2,
+              "Title": "product.proto",
+              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\gRPC\\Unary\\gRPC\\UnaryDemo\\gRPCService\\Protos\\product.proto",
+              "RelativeDocumentMoniker": "gRPCService\\Protos\\product.proto",
+              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\gRPC\\Unary\\gRPC\\UnaryDemo\\gRPCService\\Protos\\product.proto",
+              "RelativeToolTip": "gRPCService\\Protos\\product.proto",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
+              "WhenOpened": "2024-07-24T20:46:05.668Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ProductGrpc.cs",
-              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\gRPC\\Unary\\gRPC\\UnaryDemo\\gRPCService\\obj\\Debug\\net8.0\\Protos\\ProductGrpc.cs",
-              "RelativeDocumentMoniker": "gRPCService\\obj\\Debug\\net8.0\\Protos\\ProductGrpc.cs",
-              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\gRPC\\Unary\\gRPC\\UnaryDemo\\gRPCService\\obj\\Debug\\net8.0\\Protos\\ProductGrpc.cs",
-              "RelativeToolTip": "gRPCService\\obj\\Debug\\net8.0\\Protos\\ProductGrpc.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAawEkAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T12:51:58.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductServicecs.cs",
-              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\gRPC\\Unary\\gRPC\\UnaryDemo\\gRPCService\\Services\\ProductServicecs.cs",
-              "RelativeDocumentMoniker": "gRPCService\\Services\\ProductServicecs.cs",
-              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\gRPC\\Unary\\gRPC\\UnaryDemo\\gRPCService\\Services\\ProductServicecs.cs",
-              "RelativeToolTip": "gRPCService\\Services\\ProductServicecs.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T12:41:51.817Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "product.proto",
               "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\gRPC\\Unary\\gRPC\\UnaryDemo\\GrpcClient23\\Protos\\product.proto",
               "RelativeDocumentMoniker": "GrpcClient23\\Protos\\product.proto",
               "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\gRPC\\Unary\\gRPC\\UnaryDemo\\GrpcClient23\\Protos\\product.proto",
               "RelativeToolTip": "GrpcClient23\\Protos\\product.proto",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA/AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
-              "WhenOpened": "2024-07-24T12:38:50.806Z",
+              "WhenOpened": "2024-07-24T20:26:44.83Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\gRPC\\Unary\\gRPC\\UnaryDemo\\GrpcClient23\\Program.cs",
               "RelativeDocumentMoniker": "GrpcClient23\\Program.cs",
               "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\gRPC\\Unary\\gRPC\\UnaryDemo\\GrpcClient23\\Program.cs",
               "RelativeToolTip": "GrpcClient23\\Program.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwCAAAAAzAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACIAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T12:35:26.367Z",
+              "WhenOpened": "2024-07-24T20:21:49.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductServicecs.cs",
+              "DocumentMoniker": "F:\\\u0622\u0645\u0648\u0632\u0634\\gRPC\\Unary\\gRPC\\UnaryDemo\\gRPCService\\Services\\ProductServicecs.cs",
+              "RelativeDocumentMoniker": "gRPCService\\Services\\ProductServicecs.cs",
+              "ToolTip": "F:\\\u0622\u0645\u0648\u0632\u0634\\gRPC\\Unary\\gRPC\\UnaryDemo\\gRPCService\\Services\\ProductServicecs.cs",
+              "RelativeToolTip": "gRPCService\\Services\\ProductServicecs.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAA7wCcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T12:41:51.817Z",
               "EditorCaption": ""
             }
           ]

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "SgpleTjZJgw=",
+  "dgSpecHash": "bPrUeadOLcw=",
   "success": true,
   "projectFilePath": "F:\\آموزش\\gRPC\\Unary\\gRPC\\UnaryDemo\\gRPCService\\gRPCService.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\AsusIran\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\AsusIran\\.nuget\\packages\\google.protobuf\\3.23.1\\google.protobuf.3.23.1.nupkg.sha512",
     "C:\\Users\\AsusIran\\.nuget\\packages\\grpc.aspnetcore\\2.57.0\\grpc.aspnetcore.2.57.0.nupkg.sha512",
     "C:\\Users\\AsusIran\\.nuget\\packages\\grpc.aspnetcore.server\\2.57.0\\grpc.aspnetcore.server.2.57.0.nupkg.sha512",

@@ -1,6 +1,7 @@
 using gRPCService.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
 // Add services to the container.
 builder.Services.AddGrpc();
